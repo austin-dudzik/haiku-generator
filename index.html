@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Haiku Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-danger">
+
+  <div class="container rounded p-5 m-5 bg-light w-50 mx-auto">
+
+    <form id="addWord">
+
+      <h1 class="text-center">Haiku Generator</h1>
+
+      <div class="form-group mb-2">
+        <label for="word">Enter a word</label>
+        <input type="text" name="word" id="word" class="form-control" required>
+        <p id="message"></p>
+        <small><strong>Instructions:</strong> Words should be entered with dashes (-) between syllables.</small>
+      </div>
+
+      <p id="firstLine"></p>
+      <p id="secondLine"></p>
+      <p id="thirdLine"></p>
+
+
+      <button type="submit" class="btn btn-block btn-dark my-3">Add word</button>
+      <button type="button" id="generate" class="btn btn-block btn-danger my-3">Generate</button>
+
+    </form>
+
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
